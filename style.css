@@ -1,0 +1,306 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+    color:blue;
+}
+
+.contendor{
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 214px;
+    background-color: antiquewhite;
+}
+
+.logo{
+    padding: 25px 0;
+}
+
+.logo img{
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 430px;
+    margin: auto;
+}
+
+.menu a{
+    color: darkblue;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.menu a:hover{
+    color: rgb(196, 83, 31);
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+     background-color:antiquewhite;
+    background-image: url(../imagenes/bienvenido.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border: 1px solid blue;
+}
+
+.banner > div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(209,219,189,0.5);
+    background-color: rgba(var(--verde10), 0.5);
+}
+
+.llamada-accion{
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.llamada-accion p{
+    color:azure;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-block-end: 20px;
+}
+
+ .banner p{
+    color:cornsilk;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-block-end: 20px;
+} 
+
+.llamada-accion h2{
+    font-size: 42px;
+    color: white;
+    width: 100%;
+    padding: 45px 0;
+    background-color: rgba(255,255,255,0.4);
+    max-width: 470px;
+    text-transform: uppercase;
+}
+
+.llamada-accion a{
+    font-size: 16px;
+    color: white;
+    padding: 10px 50px;
+    background-color: rgba(0,0,0,0.47);
+    margin-top: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.llamada-accion a:hover{
+    background-color: rgba(0,0,0,0.65);
+}
+
+.bienvenida{
+    width: 100%;
+    height: 240px;
+    background-color: #3e606f;
+    margin-block-start: 2px;
+    color: whitesmoke;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.bienvenida h3{
+    text-transform: uppercase;
+    width: 100%;
+    margin-block: 40px;
+}
+
+.bienvenida p{
+    line-height: 1.7em;
+    max-width: 370px;
+    padding-block-end: 50px;
+    margin: auto;
+
+}
+
+.servicios{
+    width: 100%;
+    height: 480px;
+    background-color: #3e606f;
+    margin-block-start: 2px;
+    color: whitesmoke;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.servicios h3{
+    text-transform: uppercase;
+    width: 100%;
+    margin-block: 40px;
+}
+
+.servicios p{
+    line-height: 1.7em;
+    max-width: 370px;
+    padding-block-end: 50px;
+    margin: auto;
+}
+
+.Nosotros{
+    /* width: 100%;
+    height: 460px; */
+    padding-block-start: 5px;
+    padding-block-end: 80px;
+    padding-inline: 60px;
+    /* background-color: var(--blanco10); */
+}
+
+.Nosotros > .Contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Foto-equipo{
+    width: 100%;
+    max-width: 570px;
+    /* height: auto; */
+    /* margin-block-end: 80px; */
+    /* margin-inline-start: 60px; */
+    /* margin-inline-end: 30px; */
+    /* display: flex; */
+}
+
+.Foto-equipo img{
+    width: 100%;
+    height: auto;
+}
+
+.Conocenos{
+    text-align: center;
+    padding: 0 20px;
+    max-width: 570px;
+    /* margin-block: 80px; */
+    /* width: 50%;
+    height: auto;
+    margin-inline-end: 30px;
+    display: flex; */
+}
+
+.Conocenos p:nth-child(1){
+    font-size: 18px;
+    color: #252525;
+    /* padding-block-end: 20px; */
+    text-transform: uppercase;
+    border-block-end: 2px solid #a2a2a2;
+}
+
+.Conocenos h3{
+    font-size: 18px;
+    padding-block-start: 20px;
+    padding-block-end: 30px;
+    color: #0e96dd;
+    text-transform: uppercase;
+}
+
+.Conocenos h4{
+    font-size: 14px;
+    color: #252525;
+    padding-block-end: 25px;
+}
+
+.Conocenos p:nth-child(4){
+    font-size: 14px;
+    color: #646464;
+    line-height: 1.7em;
+    padding-block-end: 20px;
+}
+
+@media all and (min-width: 769px) {
+    .Nosotros{
+        padding-block-start: 80px;
+    }
+
+    .Foto-equipo{
+        margin-inline-end: 30px;
+    }
+    .Conocenos{
+        text-align: left;
+    }
+ }
+ .top-Footer, .bottom-Footer{
+    height: 25px;
+    background-color: #193441;
+}
+
+.center-Footer .contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* height: 240px; */
+    background-color: #152d37;
+}
+
+.center-Footer .widget{
+    text-align: center;
+    padding-block-start: 20px;
+    padding-block-end: 35px;
+    color: #8f8e8e;
+    max-width: 270px;
+    margin: 0 auto;
+}
+
+.center-Footer .widget h4{
+    padding-block-end: 15px;
+    font-size: 18px;
+}
+
+.center-Footer .widget p{
+    font-size: 14px;
+}
+
+.bottom-Footer p{
+    color: #8f8e8e;
+    font-size: 10px;
+    text-align: center;
+}
+
+@media all and (min-width: 769px) {
+    .center-Footer .widget h4{
+        padding-block-end: 35px;
+        /* font-size: 18px; */
+    }
+
+    .bottom-Footer p{
+        font-size: 12px;
+    }
+}
